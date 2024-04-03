@@ -1,10 +1,13 @@
 import { tv, VariantProps } from "tailwind-variants";
 
 export const buttonStyles = tv({
+  base: "px-8 py-4 text-xl rounded-md flex-1 max-w-56 flex justify-center items-center ease-in-out duration-200",
   variants: {
     role: {
-      primary: "bg-blue-500",
-      secondary: "bg-gray-500",
+      primary:
+        "bg-emerald-800 text-white hover:bg-emerald-900 transition-colors",
+      secondary:
+        "bg-transparent text-emerald-800 outline outline-transparent hover:outline-emerald-800 transition-all",
     },
   },
 });
